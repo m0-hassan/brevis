@@ -42,15 +42,23 @@
       type="module"
       src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"
     ></script>
+
+    <!-- DIALOGFLOW CHATBOT STYLESHEET -->
+    <link
+      rel="stylesheet"
+      href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css"
+    />
+
+    <!-- DIALOGFLOW CHATBOT SCRIPT -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+
   </head>
   <body>
     <!-- loader -->
     <div class="loader">
       <div class="loader-copy">
         <p id="loader-copy-1">Loading in progress</p>
-
         <p id="loader-copy-2">A few seconds please</p>
-
         <p id="loader-copy-3">Almost done</p>
       </div>
       <div class="progress-bar"></div>
@@ -97,15 +105,15 @@
         </a>
         <a href="#services" class="menu-item">
           <span>02</span>
-          <span>Technologies</span>
+          <span>Our Frameworks</span>
         </a>
         <a href="#cases" class="menu-item">
           <span>03</span>
-          <span>Cases</span>
+          <span>About</span>
         </a>
         <a href="#prices" class="menu-item">
           <span>04</span>
-          <span>Prices & Processe</span>
+          <span>Summary</span>
         </a>
         <a href="#contact" class="menu-item">
           <span>05</span>
@@ -126,9 +134,9 @@
           </div>
           <div class="hero-col">
             <p id="site-intro">
-            Brevis is a platform that utilizes a custom LLM
-            to synthesize complex answers to student queries
-            regarding the academic and professional landscape @ UChicago.
+                Brevis is a platform that utilizes a custom LLM
+              to synthesize complex answers to student queries
+              regarding the academic and professional landscape @ UChicago.
             </p>
           </div>
         </div>
@@ -147,8 +155,8 @@
             </h2>
 
             <p class="about-copy">
-                Our team focuses on creating a LLM that can compress all
-                of the various resources for undergraduates at UChicago at the click of a button.
+              Our team focuses on creating a LLM that can compress all
+              of the various resources for undergraduates at UChicago at the click of a button.
             </p>
           </div>
         </div>
@@ -163,10 +171,10 @@
           <div class="services-row">
             <div class="service-item">
               <div class="service-icon">
-                <ion-icon name="finger-print-sharp"></ion-icon>
+                <ion-icon name="file-tray-full-outline"></ion-icon>
               </div>
               <div class="service-title">
-                <p>Authy</p>
+                <p>UCHICAGO CATALOG</p>
               </div>
             </div>
             <div class="service-item">
@@ -174,23 +182,23 @@
                 <ion-icon name="layers-sharp"></ion-icon>
               </div>
               <div class="service-title">
-                <p>Design</p>
+                <p>DESIGN</p>
               </div>
             </div>
             <div class="service-item">
               <div class="service-icon">
-                <ion-icon name="folder-sharp"></ion-icon>
+                <ion-icon name="logo-css3"></ion-icon>
               </div>
               <div class="service-title">
-                <p>Storage</p>
+                <p>CSS</p>
               </div>
             </div>
             <div class="service-item">
               <div class="service-icon">
-                <ion-icon name="shield-checkmark-sharp"></ion-icon>
+                <ion-icon name="logo-javascript"></ion-icon>
               </div>
               <div class="service-title">
-                <p>Security</p>
+                <p>JAVA</p>
               </div>
             </div>
           </div>
@@ -200,15 +208,15 @@
                 <ion-icon name="logo-python"></ion-icon>
               </div>
               <div class="service-title">
-                <p>Development</p>
+                <p>PYTHON</p>
               </div>
             </div>
             <div class="service-item">
               <div class="service-icon">
-                <ion-icon name="crop-sharp"></ion-icon>
+                <ion-icon name="logo-html5"></ion-icon>
               </div>
               <div class="service-title">
-                <p>Editing</p>
+                <p>HTML</p>
               </div>
             </div>
             <div class="service-item">
@@ -216,7 +224,7 @@
                 <ion-icon name="cloud-sharp"></ion-icon>
               </div>
               <div class="service-title">
-                <p>Cloud</p>
+                <p>GOOGLE CLOUD</p>
               </div>
             </div>
             <div class="service-item">
@@ -224,7 +232,7 @@
                 <ion-icon name="cube-sharp"></ion-icon>
               </div>
               <div class="service-title">
-                <p>Blockchain</p>
+                <p>R.A.G</p>
               </div>
             </div>
           </div>
@@ -256,19 +264,9 @@
               </div>
 
               <p>
-                Brevis uses its own custom Large Language Model (LLM) rather than relying on an external API, which allows for greater adaptability,
-                security, and control over the data it processes. By developing its own LLM, Brevis can optimize its system for highly specialized
-                tasks and domain-specific insights, ensuring the highest levels of performance and reliability. This in-house approach also reduces
-                potential bottlenecks related to external services, while enabling continual refinements and improvements based on user feedback.
-              </p>
-
-              <div class="project-cta">
-                <p>Download App</p>
-                <div class="project-cta-row">
-                  <div class="cta"><span>ios</span></div>
-                  <div class="cta"><span>android</span></div>
-                </div>
-              </div>
+                Brevis uses RAG (Real Augmented Generation) an LLM API, allowing us to finetune responses which allows for greater adaptability, security, and control over the data it processes.
+                By developing its own LLM, Brevis can optimize its system for highly specialized tasks and domain-specific insights, ensuring the highest levels of performance and reliability.
+              <div class="project-cta"></div>
             </div>
             <div class="project-img">
               <img src="./assets/project-1.jpg" alt="" />
@@ -290,13 +288,7 @@
                 aspects of student life.
               </p>
 
-              <div class="project-cta">
-                <p>Download App</p>
-                <div class="project-cta-row">
-                  <div class="cta"><span>ios</span></div>
-                  <div class="cta"><span>android</span></div>
-                </div>
-              </div>
+              <div class="project-cta"></div>
             </div>
             <div class="project-img">
               <img src="./assets/project-2.jpg" alt="" />
@@ -319,13 +311,7 @@
                 limitations often associated with traditional advising channels, ensuring a more equitable experience for all students.
               </p>
 
-              <div class="project-cta">
-                <p>Download App</p>
-                <div class="project-cta-row">
-                  <div class="cta"><span>ios</span></div>
-                  <div class="cta"><span>android</span></div>
-                </div>
-              </div>
+              <div class="project-cta"></div>
             </div>
             <div class="project-img">
               <img src="./assets/project-3.jpg" alt="" />
@@ -347,13 +333,7 @@
                 the goal is to empower students to navigate the complexities of their new environment with confidence, ensuring
                 they have the support needed to thrive academically and professionally.
               </p>
-              <div class="project-cta">
-                <p>Download App</p>
-                <div class="project-cta-row">
-                  <div class="cta"><span>ios</span></div>
-                  <div class="cta"><span>android</span></div>
-                </div>
-              </div>
+              <div class="project-cta"></div>
             </div>
             <div class="project-img">
               <img src="./assets/project-4.jpg" alt="" />
@@ -365,7 +345,7 @@
           <div class="project">
             <div class="project-copy">
               <div class="project-header">
-                <h3>Background Continued/h3>
+                <h3>Background Continued</h3>
                 <p>01 - 05</p>
               </div>
               <p>
@@ -376,13 +356,7 @@
                 growing increasingly adept at offering the most relevant guidance possible.
               </p>
 
-              <div class="project-cta">
-                <p>Download App</p>
-                <div class="project-cta-row">
-                  <div class="cta"><span>ios</span></div>
-                  <div class="cta"><span>android</span></div>
-                </div>
-              </div>
+              <div class="project-cta"></div>
             </div>
             <div class="project-img">
               <img src="./assets/project-5.jpg" alt="" />
@@ -402,13 +376,7 @@
                 ensuring they receive context-aware support. This approach not only aids in smoothing their transition
                 but also helps in laying a robust foundation for their academic and professional careers.
               </p>
-              <div class="project-cta">
-                <p>Download App</p>
-                <div class="project-cta-row">
-                  <div class="cta"><span>ios</span></div>
-                  <div class="cta"><span>android</span></div>
-                </div>
-              </div>
+              <div class="project-cta"></div>
             </div>
             <div class="project-img">
               <img src="./assets/project-6.jpg" alt="" />
@@ -425,8 +393,8 @@
           <img src="./assets/grad.png" alt="" />
         </div>
         <div class="prices-hero-header">
-          <h1>Prices</h1>
-          <h3>And Process</h3>
+          <h1>BEGIN YOUR JOURNEY</h1>
+          <h3>USING BREVIS</h3>
         </div>
       </section>
 
@@ -436,22 +404,14 @@
           <div class="prices-col"></div>
           <div class="prices-col">
             <h2>
-              Opt for our subscription model, where you pay a monthly fee for
-              continuous access to our expert team.
+              Below, you can access Brevis and a multitude of UChicago resources at the sending of a query.
               <span style="opacity: 0">.</span>
             </h2>
-
-            <p class="prices-copy">
-              This model is ideal for ongoing projects that require consistent
-              updates and support.
-            </p>
           </div>
         </div>
-
         <div class="prices-cta">
           <a href="#">
-            <h1>Sprint From</h1>
-            <h1>USD 2000</h1>
+            <h1>TALK NOW</h1>
           </a>
         </div>
       </section>
@@ -465,11 +425,11 @@
                 <img src="./assets/feature-1.png" alt="" />
               </div>
               <div class="features-title">
-                <h2>TRANSPARENT WEEKLY UPDATES</h2>
+                <h2>MOTIVATION</h2>
                 <p>
-                  Our projects are managed in sprints. We collaborate with you
-                  to define objectives, break down the development process into
-                  manageable tasks, and deliver weekly progress reports.
+                  We wanted to build Brevis because we feel the key
+                  to success is having easy access to knowledge
+                  and resources critical for your success academically and profesionally.
                 </p>
               </div>
             </div>
@@ -478,11 +438,11 @@
                 <img src="./assets/feature-2.png" alt="" />
               </div>
               <div class="features-title">
-                <h2>DETAILED WEEKLY INSIGHTS</h2>
+                <h2>LAST YEAR</h2>
                 <p>
-                  By running our projects in sprints, we ensure clarity and
-                  focus. Together, we outline the necessary tasks and provide
-                  you with detailed weekly reports on our progress.
+                  We utilized Google Gemini API, but we ran into a multitude of issues of creating
+                  consistent responses in line with our goals with Brevis. We opted for utilizing RAG for
+                  the chatbot and kept Google Gemini to generate academic schedules.
                 </p>
               </div>
             </div>
@@ -493,11 +453,11 @@
                 <img src="./assets/feature-3.png" alt="" />
               </div>
               <div class="features-title">
-                <h2>CONSISTENT WEEKLY PROGRESS</h2>
+                <h2>FRONT END</h2>
                 <p>
-                  We adopt a sprint-based approach for all projects. This
-                  involves setting clear goals, dividing the development into
-                  specific tasks, and delivering consistent weekly updates.
+                  Part of creating an excellent application is presenting it in a clean and
+                  aesthetic manner, this time around we focused heavily on presentation using classic HTML & Javascript
+                  rather than React.
                 </p>
               </div>
             </div>
@@ -506,11 +466,10 @@
                 <img src="./assets/feature-4.png" alt="" />
               </div>
               <div class="features-title">
-                <h2>WEEKLY PROGRESS TRACKING</h2>
+                <h2>RAG</h2>
                 <p>
-                  Our sprint methodology ensures that we define tasks
-                  collaboratively, segment the entire development process, and
-                  provide transparent weekly progress reports.
+                  For better, more consistent responses we used Retrieval-augmented generation (RAG), a a technique
+                  for enhancing the accuracy and reliability of generative AI models with facts fetched from external sources.
                 </p>
               </div>
             </div>
@@ -533,19 +492,6 @@
           <h2>Get in touch</h2>
         </div>
 
-        <div class="footer-ctas">
-          <div class="footer-ctas-col">
-            <div class="footer-cta-icon">
-              <a href="https://www.instagram.com/codegridweb/" target="_blank">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </div>
-            <div class="footer-cta-icon">
-              <a href="https://www.youtube.com/@codegrid" target="_blank">
-                <ion-icon name="logo-youtube"></ion-icon>
-              </a>
-            </div>
-          </div>
           <div class="footer-ctas-col">
             <div class="footer-cta-icon">
               <a href="#hero"><ion-icon name="arrow-up-sharp"></ion-icon></a>
@@ -583,6 +529,7 @@
       </footer>
     </div>
 
+    <!-- Scroll / GSAP scripts -->
     <script src="https://unpkg.com/lenis@1.1.4/dist/lenis.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
@@ -596,15 +543,42 @@
     <script src="./js/prices.js"></script>
 
     <script>
+      // Smooth scrolling on anchor links
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
-
           document.querySelector(this.getAttribute("href")).scrollIntoView({
             behavior: "smooth",
           });
         });
       });
     </script>
+
+    <!-- DIALOGFLOW CHATBOT COMPONENT -->
+    <df-messenger
+      project-id="x-pathway-430521-f0"
+      agent-id="9358204f-f91c-46ef-8867-23612db4ff82"
+      language-code="en"
+      max-query-length="-1"
+    >
+      <df-messenger-chat-bubble chat-title="chatbotbrevisucwinter1">
+      </df-messenger-chat-bubble>
+    </df-messenger>
+
+    <!-- OPTIONAL DIALOGFLOW CHATBOT STYLING -->
+    <style>
+      df-messenger {
+        z-index: 999;
+        position: fixed;
+        --df-messenger-font-color: #000;
+        --df-messenger-font-family: "Google Sans", sans-serif;
+        --df-messenger-chat-background: #f3f6fc;
+        --df-messenger-message-user-background: #d3e3fd;
+        --df-messenger-message-bot-background: #fff;
+        bottom: 16px;
+        right: 16px;
+      }
+    </style>
+
   </body>
 </html>
