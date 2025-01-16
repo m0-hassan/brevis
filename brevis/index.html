@@ -547,42 +547,31 @@
       });
     </script>
 
-<!-- DIALOGFLOW CHATBOT COMPONENT -->
-<df-messenger
-  project-id="x-pathway-430521-f0"
-  agent-id="9358204f-f91c-46ef-8867-23612db4ff82"
-  language-code="en"
-  max-query-length="-1"
->
-  <df-messenger-chat-bubble chat-title="Brevis Chatbot">
-  </df-messenger-chat-bubble>
-</df-messenger>
+    <!-- DIALOGFLOW CHATBOT COMPONENT -->
+    <df-messenger
+      project-id="x-pathway-430521-f0"
+      agent-id="9358204f-f91c-46ef-8867-23612db4ff82"
+      language-code="en"
+      max-query-length="-1"
+    >
+      <df-messenger-chat-bubble chat-title="Brevis Chatbot">
+      </df-messenger-chat-bubble>
+    </df-messenger>
 
-<!-- DIALOGFLOW CHATBOT STYLING -->
-<style>
-  df-messenger {
-    z-index: 999;
-    position: fixed;
-    --df-messenger-font-color: #ffffff;
-    --df-messenger-font-family: "Google Sans", sans-serif;
-    --df-messenger-chat-background: #000000;
-    --df-messenger-message-user-background: #990000;
-    --df-messenger-message-bot-background: #1a1a1a;
-    --df-messenger-button-titlebar-color: #990000;
-    --df-messenger-button-titlebar-font-color: #ffffff;
-    --df-messenger-chat-border-radius: 10px;
-    --df-messenger-input-background: #1a1a1a;
-    --df-messenger-input-font-color: #ffffff;
-    --df-messenger-input-placeholder-font-color: #808080;
-    --df-messenger-send-icon: #990000;
-    bottom: 16px;
-    right: 16px;
-  }
+    <!-- OPTIONAL DIALOGFLOW CHATBOT STYLING -->
+    <style>
+      df-messenger {
+        z-index: 999;
+        position: fixed;
+        --df-messenger-font-color: #000;
+        --df-messenger-font-family: "Google Sans", sans-serif;
+        --df-messenger-chat-background: #f3f6fc;
+        --df-messenger-message-user-background: #d3e3fd;
+        --df-messenger-message-bot-background: #fff;
+        bottom: 16px;
+        right: 16px;
+      }
+    </style>
 
-  df-messenger-chat-bubble {
-    background: linear-gradient(135deg, #990000, #660000);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  }
-</style>
   </body>
 </html>
