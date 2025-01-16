@@ -50,7 +50,7 @@ a,
 p,
 span {
   text-decoration: none;
-  font-size: 13px;
+  font-size: 20px;
   color: var(--color-text);
 }
 
@@ -61,6 +61,14 @@ h2 {
   letter-spacing: -2px;
   line-height: 100%;
 }
+
+h5 {
+    font-weight: 500;
+    font-size: 80px;
+    color: var(--color-text-secondary);
+    letter-spacing: -2px;
+    line-height: 100%;
+  }
 
 img {
   width: 100%;
